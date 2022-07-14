@@ -1,0 +1,205 @@
+/* TODO inserir outros breakpoints */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #c700c7ff;
+}
+
+
+body {
+    margin: 6vw 6vw;
+    padding: 0;
+    background-color: #800080ff;
+    border-radius: 30px;
+    height: 92vh;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header div div img{
+    height: 40px;
+}
+
+header div div a{
+    padding: 8px;
+}
+
+header div div a:hover {
+    border-radius: 20px;
+    background-color: #008000ff;
+}
+
+nav {
+    display: none;
+    margin-right: 8vw;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 20px;
+    background-color: #808000ff;
+    border-color: #800000ff;
+    border-style: solid;
+    border-width: 2px;
+}
+
+nav li:hover {
+    border-radius: 20px;
+    background-color: #008000ff;
+}
+
+#sandwich {
+    height: 30px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+main section h1{
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 40px;
+}
+main section img {
+    height: 80vw;
+}
+
+main section p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 40px;
+}
+
+.icon-menu-name {
+    margin: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 74vw;
+}
+
+.icon-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.girl-circle {
+    display: flex;
+    background-color: #800000ff;
+    justify-content: center;
+    width: 74vw;
+    height: 74vw;
+    border-radius: 37vw;
+}
+
+.view-portfolio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 160px;
+    border-radius: 30px;
+    margin: 32px 0;
+    background-color: #800000ff;
+    margin-left: 32px;
+}
+
+.view-portfolio:hover {
+    background-color: #008000ff;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+@media screen and (min-width: 360px) {
+    body {
+       height: unset;  
+    }   
+}
+
+@media screen and (min-width: 900px){
+    html {
+        width: 100%;
+        height: 100vh;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    body {
+        width: 1080px;
+        height: 60vh;
+        background-color: #800080ff;
+    }
+
+    nav {
+        display: unset;
+        border-style: none;
+        background-color: unset;
+    }
+    nav ul li {
+        background-color: unset;
+        border-color: unset;
+        border-style: unset;
+        border-width: unset;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #sandwich{
+        display: none;
+    }
+    
+    main section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .girl-circle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 360px;
+        width: 700px;
+        border-radius: 200px;
+        margin-right: 40px;
+    }
+
+    main section img {
+        height: 34vw;
+    }
+}
