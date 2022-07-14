@@ -193,13 +193,15 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 360px;
-        width: 700px;
-        border-radius: 200px;
+        max-height: 450px;
+        max-width: 450px;
+        min-height: 450px;
+        min-width: 450px;
+        border-radius: 225px;
         margin-right: 40px;
     }
 
     main section img {
-        height: 34vw;
+        height: 500px;
     }
 }
