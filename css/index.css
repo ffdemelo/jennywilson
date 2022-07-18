@@ -18,7 +18,7 @@ body {
     padding: 0;
     background-color: #800080ff;
     border-radius: 30px;
-    height: 92vh;
+    max-height: 92vh;
     z-index: 0;
     overflow: clip;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.363);
@@ -106,7 +106,6 @@ main section {
 }
 
 main section h1{
-    font-size: 32px;
     font-family: 'Patrick Hand', cursive;
     margin-left: 40px;
 }
@@ -115,9 +114,8 @@ main section img {
 }
 
 main section p{
+    margin: 0 40px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    margin: 40px;
 }
 
 .icon-menu-name {
@@ -138,6 +136,7 @@ main section p{
     display: flex;
     background-color: #800000ff;
     justify-content: center;
+    margin: 10px auto;
     width: 74vw;
     height: 74vw;
     border-radius: 37vw;
@@ -187,7 +186,7 @@ main section p{
     height: 60px;
     width: 160px;
     border-radius: 30px;
-    margin: 32px 0;
+    margin: 12px 0;
     background-color: #800000ff;
     margin-left: 32px;
 }
@@ -203,11 +202,29 @@ a {
     text-decoration: none;
 }
 
-@media screen and (min-width: 360px) {
-    body {
-       height: unset;  
-    }   
-}
+/* @media screen and (min-width: 360px) {
+
+    .girl-circle{
+        max-height: 300px;
+        max-width: 300px;
+        min-height: 300px;
+        min-width: 300px;
+        border-radius: 150px;
+        margin-right: 40px;
+    }
+
+    .girl-inner-circle {
+        max-height: 186px;
+        max-width: 186px;
+        min-height: 186px;
+        min-width: 186px;
+        border-radius: 93px;
+    }
+
+    .girl-inner-circle img {
+        height: 283px;
+    }
+} */
 
 @media screen and (min-width: 900px){
     html {
@@ -224,6 +241,13 @@ a {
         width: 80%;
         height: 80vh;
         background-color: #800080ff;
+    }
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 22px;
     }
 
     nav {
